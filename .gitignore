@@ -1,1 +1,8 @@
+# environment
 .env
+
+# executable
+wave-explorer
+
+# data
+data/

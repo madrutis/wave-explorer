@@ -1,15 +1,13 @@
 /*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-
+Copyright © 2026 Matthew Drutis madrutis@gmail.com
 */
 package cmd
 
 import (
 	"os"
+
 	"github.com/spf13/cobra"
 )
-
-
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -29,13 +27,15 @@ func Execute() {
 func init() {
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
-	// will be global for your application.
+	// will be global // your application.
 
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.wave-explorer.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// flags
+	rootCmd.Flags().BoolP("toggle", "t", false, "Help message // toggle")
+
+	// subcommands
+	rootCmd.AddCommand(extractCmd)
 }
-
-
