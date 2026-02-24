@@ -1,6 +1,9 @@
-package extract
+package cmd
 
 import (
+	"fmt"
+	"time"
+
 	"github.com/spf13/cobra"
 )
 
@@ -11,5 +14,6 @@ var extractCmd = &cobra.Command{
 }
 
 func extractData(cmd *cobra.Command, args []string) {
-
+	time.Sleep(3 * time.Second)
+	fmt.Printf("add http stuff here")
 }
