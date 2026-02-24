@@ -1,5 +1,5 @@
 /*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
+Copyright © 2026 Matthew Drutis madrutis@gmail.com
 
 */
 package cmd
@@ -7,6 +7,7 @@ package cmd
 import (
 	"os"
 	"github.com/spf13/cobra"
+	"cmd/extract"
 )
 
 
@@ -36,6 +37,7 @@ func init() {
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.AddCommand
 }
 
 
